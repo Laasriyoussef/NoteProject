@@ -38,7 +38,8 @@ import { MatFormFieldModule,  MatToolbarModule, MatCheckboxModule, MatButtonModu
     MatExpansionModule,
     MatInputModule,
     MatFormFieldModule,
-    MatMenuModule
+    MatMenuModule, 
+    MatCardModule,
   ],
   exports: [
     MatExpansionModule,
