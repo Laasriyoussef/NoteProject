@@ -12,8 +12,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MatFormFieldModule,  MatToolbarModule, MatCheckboxModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatInputModule } from '@angular/material';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { MatFormFieldModule,  MatToolbarModule, MatCheckboxModule, MatButtonModu
     UserComponent,
     LoginComponent,
     RegisterComponent,
+    ConfirmDialogComponent,
+  
    ],
 
    imports: [
@@ -40,6 +44,8 @@ import { MatFormFieldModule,  MatToolbarModule, MatCheckboxModule, MatButtonModu
     MatFormFieldModule,
     MatMenuModule, 
     MatCardModule,
+    NgbModule,
+
   ],
   exports: [
     MatExpansionModule,
@@ -51,7 +57,8 @@ import { MatFormFieldModule,  MatToolbarModule, MatCheckboxModule, MatButtonModu
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule, MatIconModule
+    MatCardModule, MatIconModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
